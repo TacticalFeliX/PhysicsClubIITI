@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Navigation bar styles */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Section styles */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #282c34;
+    color: white;
+}
+
+#events {
+    background-color: #e8eaf6;
+}
+
+#merchandise {
+    background-color: #c5cae9;
+}
+
+#people {
+    background-color: #9fa8da;
+}
+
+#about {
+    background-color: #7986cb;
+    color: white;
+}
+
+/* Footer (optional, if needed in the future) */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+}
