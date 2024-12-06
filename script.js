@@ -1,20 +1,13 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('.navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        // Prevent default anchor behavior
-        e.preventDefault();
+// Ensure the script is loaded after the page content
+document.addEventListener('DOMContentLoaded', function () {
+  // Add a simple event listener to all navbar links
+  const navbarLinks = document.querySelectorAll('.navbar a');
 
-        // Scroll to the target section
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
+  // Prevent default behavior if necessary (e.g., if using SPA or for debugging)
+  navbarLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+          // Uncomment the line below to stop the default action if you need custom behavior
+          // e.preventDefault();
+      });
+  });
 });
-
-// Add more interactive functionality here as needed
-// Example: Dynamic content loading or animations
-console.log("Physics Club website script loaded!");
