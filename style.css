@@ -1,0 +1,72 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Section styles */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #282c34;
+    color: white;
+}
+
+#events {
+    background-color: #e8eaf6;
+}
+
+#merchandise {
+    background-color: #c5cae9;
+}
+
+#people {
+    background-color: #9fa8da;
+}
+
+#about {
+    background-color: #7986cb;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
